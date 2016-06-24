@@ -44,6 +44,7 @@ function increment() {
 				tenth = tenth + "0";
 			}
 			
+			
 
 			document.getElementById("output").innerHTML = hour + ": " + min + ": " + sec + ": " + tenth;
 			increment();
