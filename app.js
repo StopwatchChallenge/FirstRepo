@@ -20,7 +20,8 @@ function reset() {
 	running = false;
 	time = 0;
 	document.getElementById("startPause").innerHTML = "Start";
-	document.getElementById("output").innerHTML = "0:00:00:00";
+	document.getElementById("output").innerHTML = "00:00:00:00";
+	document.getElementById("lapOutput").innerHTML = "";
 }
 
 function increment() {
@@ -34,6 +35,10 @@ function increment() {
 			var hour = Math.floor(time/10/60/60);
 			var tenth = Math.floor(time%100);
 
+			if(hour<10){
+				hour = "0" + hour;
+			}
+
 			if(min<10){
 				min = "0" + min;
 			}
@@ -46,8 +51,27 @@ function increment() {
 			
 
 
-			document.getElementById("output").innerHTML = hour + ": " + min + ": " + sec + ": " + tenth;
+			document.getElementById("output").innerHTML = hour + ":" + min + ":" + sec + ":" + tenth;
 			increment();
 	}, 10);
 	}
+
+	
+};
+
+function lap() {
+
+		var currentValue = document.getElementById("output").innerHTML;
+	
+		var lapOutput = document.getElementById("lapOutput");
+		
+
+		if(lapOutput.innerHTML === "") {
+				lapOutput.innerHTML = "Lap";
+		}
+
+		lapOutput.innerHTML = lapOutput.innerHTML + "<div>" + currentValue + "</div>";
+
+
+
 };

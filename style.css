@@ -1,0 +1,129 @@
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+body {
+		
+	width: 100%;
+	height: 100em;
+	position: relative;
+	margin: auto;
+	background-image: url("http://www.bullshift.net/data/images/2013/10/360-panorama-zitterklapfen.jpg");
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 20s linear infinite;
+
+}
+/*
+image {
+
+	width: 100%;
+	height: 100em;
+	position: relative;
+	margin: auto;
+	background-image: url("http://www.bullshift.net/data/images/2013/10/360-panorama-zitterklapfen.jpg");
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 20s linear infinite;
+
+	}
+
+#lapOutput {
+	position: absolute;
+	margin-top: 650px;
+	margin-left: 300px;
+
+
+}
+*/
+
+#lapOutput {
+	position: absolute;
+	margin-left: 600px;
+	margin-top: 740px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+    
+}
+
+
+#planeImage {
+	position: absolute;
+	margin-top: 200px;
+}
+
+#display {
+	position: absolute;
+	margin-top: 510px;
+	margin-left: 600px;
+	padding: 15px;
+	width: 15%;
+	height: 150px;
+
+
+/*	background-color: #0174DF;*/
+	background: linear-gradient(to right, #0404B4, #01DFA5);
+	line-height: 1.2em;
+	border-radius: 25px;
+	border-style: solid;
+	border-color: black;
+	
+	
+	color: #0404B4;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	
+
+	
+
+}
+
+button {
+	font-size: 25px;
+	font-weight: bold;
+	border-radius: 17px;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: white;
+
+
+}
+
+
+/*
+#plane {
+	
+	background-image: url("plane.png");
+	background-size: cover;
+	position: relative;
+	margin: auto;
+	margin-top: 200px;
+	margin-left: 530px;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 60px;
+	background-color: #0174DF;
+	z-index: 10;
+	width: 00px;
+	height: 400px;
+	margin-top: 200px;
+	text-align: center;
+	padding: 20px;
+}
+*/
+
+
+
+
+
+
+
+}
