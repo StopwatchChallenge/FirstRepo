@@ -15,7 +15,6 @@ function startPause() {
 }
 
 
-
 function reset() {
 	running = false;
 	time = 0;
